@@ -516,6 +516,124 @@ h6 {
   text-align: center;
 }
 
+.portfolio {
+  padding: 150px 0px;
+}
+
+.portfolio__title {
+  margin-bottom: 40px;
+}
+
+.portfolio__subtitle {
+  margin-bottom: 80px;
+}
+
+.portfolio__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 360px;
+          flex: 0 1 360px;
+  margin: 5px;
+  border: 5px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio__item:hover {
+  border: 5px solid #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio__item:hover .portfolio__add {
+  display: block;
+}
+
+.portfolio__item:hover .portfolio__spacer {
+  display: block;
+}
+
+.portfolio__add {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolio__spacer {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.portfolio__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio__color {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  height: 3px;
+}
+
+.portfolio__color--red {
+  background-color: #fc5f45;
+}
+
+.portfolio__color--green {
+  background-color: #38c695;
+}
+
+.portfolio__color--purple {
+  background-color: #b27cf5;
+}
+
+.portfolio__color--yellow {
+  background-color: #feb960;
+}
+
+.portfolio__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #313131;
+}
+
 .footer {
   background-color: #cccccc;
   padding-bottom: 125px;
@@ -867,6 +985,10 @@ h6 {
   }
 
   .focus {
+    padding: 50px 0px;
+  }
+
+  .portfolio {
     padding: 50px 0px;
   }
 }
