@@ -665,7 +665,7 @@ h6 {
 }
 
 .team__tabs-btn::after {
-  content: '';
+  content: "";
   display: none;
   border-bottom: 40px solid #ffffff;
   border-left: 30px solid transparent;
@@ -843,6 +843,120 @@ h6 {
 
 .team__link--instagram::before {
   content: url(../img/icons/team_ico4.svg);
+}
+
+.stats {
+  background: url(../img/stats_bg.jpg) center/cover no-repeat;
+}
+
+.stats__row {
+  min-height: 464px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__item {
+  text-align: center;
+  position: relative;
+}
+
+.stats__item--red::before {
+  content: url(../img/icons/stats_ico1.svg);
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--red::after {
+  content: url(../img/icons/stats_ico1-1.svg);
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--green::before {
+  content: url(../img/icons/stats_ico2.svg);
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--green::after {
+  content: url(../img/icons/stats_ico2-2.svg);
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--purple::before {
+  content: url(../img/icons/stats_ico3.svg);
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--purple::after {
+  content: url(../img/icons/stats_ico3-3.svg);
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--yellow::before {
+  content: url(../img/icons/stats_ico4.svg);
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__item--yellow::after {
+  content: url(../img/icons/stats_ico4-4.svg);
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stats__digit {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.stats__position {
+  font-size: 15px;
+  line-height: 133.33333%;
+  color: #ffffff;
 }
 
 .footer {
@@ -1283,5 +1397,11 @@ h6 {
 
   .team {
     padding: 50px 0px;
+  }
+
+  .stats__item {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
