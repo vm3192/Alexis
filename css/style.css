@@ -4,6 +4,14 @@
 
 @import url(https://fonts.googleapis.com/css?family=Sacramento:regular&display=swap);
 
+@font-face {
+  font-family: "icomoon";
+  font-display: swap;
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -131,6 +139,34 @@ h6 {
   font-size: 15px;
   line-height: 180%;
   color: #616161;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?u4jspp");
+  src: url("fonts/icomoon.eot?u4jspp#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?u4jspp") format("truetype"), url("fonts/icomoon.woff?u4jspp") format("woff"), url("fonts/icomoon.svg?u4jspp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
 }
 
 .container {
@@ -1054,6 +1090,147 @@ h6 {
   font-size: 25px;
   color: #272727;
   margin-bottom: 20px;
+}
+
+.pricing {
+  padding: 150px 0px;
+  background-color: #f7f7f7;
+}
+
+.pricing__title {
+  margin-bottom: 40px;
+}
+
+.pricing__subtitle {
+  margin-bottom: 80px;
+}
+
+.pricing__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.pricing__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 15px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 35px 0;
+  text-align: center;
+}
+
+.pricing__item--red {
+  border-top: 3px solid #fc5f45;
+}
+
+.pricing__item--red .pricing__item-rate {
+  background: url(../img/pricing_red.png) center/contain no-repeat;
+}
+
+.pricing__item--red .pricing__btn {
+  background-color: #ffffff;
+  border: 2px solid #fc5f45;
+  border-radius: 27px;
+  color: #fc5f45;
+}
+
+.pricing__item--red .pricing__btn:hover {
+  background-color: #fc5f45;
+  color: #ffffff;
+}
+
+.pricing__item--green {
+  border-top: 3px solid #38c695;
+}
+
+.pricing__item--green .pricing__item-rate {
+  background: url(../img/pricing_green.png) center/contain no-repeat;
+}
+
+.pricing__item--green .pricing__btn {
+  background-color: #ffffff;
+  border: 2px solid #38c695;
+  border-radius: 27px;
+  color: #38c695;
+}
+
+.pricing__item--green .pricing__btn:hover {
+  background-color: #38c695;
+  color: #ffffff;
+}
+
+.pricing__item--purple {
+  border-top: 3px solid #b27cf5;
+}
+
+.pricing__item--purple .pricing__item-rate {
+  background: url(../img/pricing_purple.png) center/contain no-repeat;
+}
+
+.pricing__item--purple .pricing__btn {
+  background-color: #ffffff;
+  border: 2px solid #b27cf5;
+  border-radius: 27px;
+  color: #b27cf5;
+}
+
+.pricing__item--purple .pricing__btn:hover {
+  background-color: #b27cf5;
+  color: #ffffff;
+}
+
+.pricing__item-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #313131;
+  margin-bottom: 30px;
+}
+
+.pricing__item-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  height: 110px;
+}
+
+.pricing__rate-inner {
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.pricing__rate-inner span {
+  display: block;
+  font-size: 25px;
+}
+
+.pricing__item-list {
+  margin-bottom: 20px;
+}
+
+.pricing__item-string {
+  font-size: 15px;
+  line-height: 266.66667%;
+  color: #616161;
+}
+
+.pricing__item-string span {
+  font-weight: 500;
+  color: #313131;
 }
 
 .footer {
