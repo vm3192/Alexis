@@ -1692,6 +1692,7 @@ h6 {
   line-height: 194.44444%;
   font-weight: 500;
   margin-bottom: 10px;
+  color: #272727;
 }
 
 .blog__right {
@@ -1708,6 +1709,91 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 425px;
+  text-align: center;
+}
+
+.subscribe__inner {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.subscribe__title {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #272727;
+  margin-bottom: 55px;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__email {
+  display: inline-block;
+  width: 300px;
+  line-height: 50px;
+  padding: 0 25px;
+  background-color: #f7f7f7;
+  border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.subscribe__email::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #616161;
+}
+
+.subscribe__email::-moz-placeholder {
+  font-size: 16px;
+  color: #616161;
+}
+
+.subscribe__email:-ms-input-placeholder {
+  font-size: 16px;
+  color: #616161;
+}
+
+.subscribe__email::-ms-input-placeholder {
+  font-size: 16px;
+  color: #616161;
+}
+
+.subscribe__email::placeholder {
+  font-size: 16px;
+  color: #616161;
+}
+
+.subscribe__btn {
+  display: inline-block;
+  background-color: #fc5f45;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding: 0 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .footer {
@@ -2368,5 +2454,27 @@ h6 {
 
   .blog__item--red .blog__item-content {
     padding: 30px 20px 40px;
+  }
+
+  .subscribe__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .subscribe__email {
+    width: 100%;
+    border: 2px solid #efefef;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__btn {
+    width: 200px;
+    border-radius: 25px;
   }
 }
