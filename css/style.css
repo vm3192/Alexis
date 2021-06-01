@@ -1548,6 +1548,168 @@ h6 {
   margin-right: 20px;
 }
 
+.blog {
+  padding: 150px 0px;
+  background-color: #f7f7f7;
+}
+
+.blog__title {
+  margin-bottom: 40px;
+}
+
+.blog__subtitle {
+  margin-bottom: 80px;
+}
+
+.blog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog__left .blog__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.blog__item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
+}
+
+.blog__item--red {
+  padding: 0;
+  border-bottom: 3px solid #fc5f45;
+}
+
+.blog__item--red .blog__author,
+.blog__item--red .blog__read {
+  color: #fc5f45;
+}
+
+.blog__item--red .blog__item-title {
+  font-size: 20px;
+  line-height: 175%;
+  margin-bottom: 30px;
+}
+
+.blog__item--red .blog__author-date {
+  position: absolute;
+  bottom: 35px;
+  left: 50px;
+  margin-bottom: 0;
+}
+
+.blog__item--red .blog__date {
+  color: #ffffff;
+}
+
+.blog__item--red .blog__item-content {
+  padding: 30px 50px 40px;
+}
+
+.blog__item--green {
+  border-bottom: 3px solid #38c695;
+}
+
+.blog__item--green .blog__author,
+.blog__item--green .blog__read {
+  color: #38c695;
+}
+
+.blog__item--purple {
+  border-bottom: 3px solid #b27cf5;
+}
+
+.blog__item--purple .blog__author,
+.blog__item--purple .blog__read {
+  color: #b27cf5;
+}
+
+.blog__item--yellow {
+  border-bottom: 3px solid #feb960;
+}
+
+.blog__item--yellow .blog__author,
+.blog__item--yellow .blog__read {
+  color: #feb960;
+}
+
+.blog__img {
+  position: relative;
+  padding-top: 81%;
+}
+
+.blog__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog__author-date {
+  margin-bottom: 15px;
+}
+
+.blog__author {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.blog__date {
+  display: inline-block;
+  font-size: 13px;
+  color: #616161;
+}
+
+.blog__item-title {
+  font-size: 18px;
+  line-height: 194.44444%;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.blog__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer {
   background-color: #cccccc;
   padding-bottom: 125px;
@@ -1670,6 +1832,14 @@ h6 {
   .why__row {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .blog__item {
+    padding: 15px 15px;
+  }
+
+  .blog__item--red {
+    padding: 0;
   }
 }
 
@@ -1798,6 +1968,22 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .blog__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog__item {
+    padding: 30px 50px 40px;
+    margin-bottom: 20px;
+  }
+
+  .blog__item--red {
+    padding: 0;
   }
 
   .footer__wrapper {
@@ -2162,5 +2348,25 @@ h6 {
 
   .why {
     padding: 50px 0px;
+  }
+
+  .blog {
+    padding: 50px 0px;
+  }
+
+  .blog__item {
+    padding: 30px 20px 40px;
+  }
+
+  .blog__item--red {
+    padding: 0;
+  }
+
+  .blog__item--red .blog__author-date {
+    left: 20px;
+  }
+
+  .blog__item--red .blog__item-content {
+    padding: 30px 20px 40px;
   }
 }
